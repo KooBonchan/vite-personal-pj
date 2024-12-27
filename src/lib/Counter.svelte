@@ -3,6 +3,8 @@
   const increment = () => {
     count += 1
   }
+
+  let derived = $derived(count * count - 3); // readonly
 </script>
 
 <button onclick={increment}>
